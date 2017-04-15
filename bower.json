@@ -1,0 +1,17 @@
+{
+  "name": "cotatotohh",
+  "description": "Agenda de contatos",
+  "main": "server.js",
+  "authors": [
+    "Tarsis Cruz <costacruzt@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-route": "^1.6.3",
+    "bootstrap": "^3.3.7",
+    "angular-resource": "^1.6.3"
+  }
+}

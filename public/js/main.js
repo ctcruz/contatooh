@@ -1,0 +1,25 @@
+angular.module('contatooh', ['ngRoute','ngResource']) //segundo parametro são as dependencias do módulo
+	.config(function($routeProvider){
+		
+		$routeProvider.when('/contatos', {
+			templateUrl: 'partials/contatos.html',
+			controller: "ContatosController", 
+		});
+
+		$routeProvider.when('/contato/:contatoId', {
+			templateUrl: 'partials/contato.html',
+			controller: "ContatoController", 
+		});
+
+		$routeProvider.when('/contato', {
+			templateUrl: 'partials/contato.html',
+			controller: 'ContatoController'
+		});
+
+		$routeProvider.when('/ajuda', {
+			templateUrl: 'partials/ajuda.html',
+			controller: 'AjudaController'
+		});
+
+		$routeProvider.otherwise({redirectTo: '/contatos'});
+});
